@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "lista1 lista2 lista3 lista4";
+}
+
+.lista1 {
+  grid-area: lista1;
+}
+
+.lista2 {
+  grid-area: lista2;
+}
+
+.lista3 {
+  grid-area: lista3;
+}
+
+.lista4 {
+  grid-area: lista4;
+}
