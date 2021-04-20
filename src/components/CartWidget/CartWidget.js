@@ -1,10 +1,10 @@
 import React from 'react';
-
+import image from '../CartWidget/cart-logo.png';
 
 function CartWidget() {
     return (
         <div>
-            <img src="./cart-logo.png" alt="logo-cart" ></img>
+            <img src={image} alt="logo-cart" />
         </div>
     );
 };

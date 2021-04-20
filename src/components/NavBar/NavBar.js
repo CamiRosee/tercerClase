@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -16,21 +17,31 @@ function NavBar() {
   
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                      <a className="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Productos</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li>
-                      <a className="nav-link" href="#"><CartWidget /></a>
-                    </li>
+                    <Link to="/">
+                      <li className="nav-item active">
+                        <a className="nav-link" href="#">Inicio</a>
+                      </li>
+                    </Link>
+                    <Link to="/Productos">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Productos</a>
+                      </li>
+                    </Link>
+                    <Link to="/About">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Sobre Nosotros</a>
+                      </li>
+                    </Link>
+                    <Link to="/Contacto">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Contacto</a>
+                      </li>
+                    </Link>
+                    <Link to="/Cart">  //no tengo views, ojo!
+                      <li>
+                        <a className="nav-link" href="#"><CartWidget /></a>
+                      </li>
+                    </Link>
                   </ul>
                 </div>
                </nav>
